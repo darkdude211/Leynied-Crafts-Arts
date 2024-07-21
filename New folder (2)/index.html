@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Leynied Craft and Arts</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body id="page-top">
+
+  <!--/ Nav Star /-->
+<nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand js-scroll" href="#page-top">ArtFolio</a>
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDefault"
+            aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link js-scroll active" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link js-scroll" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link js-scroll" href="#service">Services</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link js-scroll" href="#work">Work</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link js-scroll" href="#blog">Blog</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link js-scroll" href="#contact">Contact</a>
+        </li>
+
+        <li class="nav-item">
+    <a class="nav-link js-scroll" href="#" data-bs-toggle="modal" data-bs-target="#categoryModal">Category</a>
+</li>
+
+    </ul>
+</div>
+</nav>
+
+ <style>
+/* Define the fade-in animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply the animation to the modal */
+.modal.fade.show {
+    animation: fadeInUp 0.5s ease-out;
+}
+
+/* Additional styling for the list group items */
+.list-group-item {
+    border: none;
+    padding: 20px 25px;
+    font-size: 18px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Darker design for specific items */
+.list-group-item.earrings,
+.list-group-item.hair-clip,
+.list-group-item.necklace {
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3), 0 20px 40px rgba(0, 0, 0, 0.4); /* Darker shadow */
+    background-color: #f8f9fa; /* Slightly darker background color */
+}
+
+/* Bold text and monochromatic color for the BEADWORK item */
+.list-group-item.beadwork {
+    font-weight: bold; /* Make text bold */
+    color: #333; /* Monochromatic color (dark gray) */
+}
+
+/* Remove color changes on hover */
+.list-group-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2), 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Remove background color changes for odd and even list items */
+.list-group-item:nth-child(odd),
+.list-group-item:nth-child(even) {
+    background-color: transparent; /* Or a default color if needed */
+}
+
+/* Additional styling for nested list items */
+.nested-list-group-item {
+    padding-left: 40px;
+    background-color: transparent; /* Or a default color if needed */
+    color: #33c1ff; /* Cool color (Light Blue) */
+    list-style-type: disc; /* Bullet style */
+    margin-bottom: 10px; /* Space between items */
+}
+
+/* Optional: Add hover effect for nested items */
+.nested-list-group-item:hover {
+    color: #0099ff; /* Slightly different cool color on hover */
+}
+
+/* Remove color styling from the custom-color class */
+.custom-color {
+    color: inherit; /* Inherit color from parent element */
+}
+
+
+/* Remove the default list styling for .list-group-item */
+.list-group-item {
+    list-style-type: none; /* Remove default list bullets */
+}
+
+/* Existing CSS for list-group-item hover effect */
+.list-group-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2), 0 12px 24px rgba(0, 0, 0, 0.2);
+    background-color: #d4edda; /* Light green background color */
+}
+
+
+.beadwork {
+background-image: url('img/3.jpg');
+background-size: cover;
+background-position: center;
+        }
+
+.macrame {
+        font-weight: bold;
+    }
+
+   .embroidery {
+        font-weight: bold;
+    }
+
+.embroidery {
+background-image: url('img/embroidery.jpg');
+background-size: cover;
+background-position: center;
+
+.macrame {
+background-image: url('img/Macrame.jpg');
+background-size: cover;
+background-position: center;
+
+
+    </style>
+
+</head>
+<body>
+    <!-- Category Modal -->
+    <div class="modal fade" id="categoryModal" tabindex="-1" aria-labelledby="categoryModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="categoryModalLabel">Categories</h3> 
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h4>Gallery</h4> <br>
+
+                      <center>
+<ul class="list-group">
+    <li class="list-group-item beadwork" data-bs-toggle="collapse" data-bs-target="#beadworkItems" aria-expanded="false" aria-controls="beadworkItems">
+        BEADWORK
+    </li>
+    </ul>
+
+                      </center>
+
+                        <div class="collapse" id="beadworkItems">
+                            <ul class="list-group">
+                                <li class="list-group-item nested-list-group-item">Earrings</li>
+                                <li class="list-group-item nested-list-group-item">Hair Clip</li>
+                                <li class="list-group-item nested-list-group-item">Necklace</li>
+                            </ul>
+                        </div>
+                        <br>
+
+                        <center>
+    <ul class="list-group">
+        <li class="list-group-item embroidery" data-bs-toggle="collapse" data-bs-target="#embroideryItems" aria-expanded="false" aria-controls="embroideryItems">
+            EMBROIDERY
+        </li>
+    </ul>
+</center>
+
+<div class="collapse" id="embroideryItems">
+    <ul class="list-group">
+        <li class="list-group-item nested-list-group-item">Friendship Bracelets</li>
+        <li class="list-group-item nested-list-group-item">Satin Embroidery</li>
+    </ul>
+</div>
+
+<br>
+
+                        <center>
+    <ul class="list-group">
+        <li class="list-group-item macrame" data-bs-toggle="collapse" data-bs-target="#macrameItems" aria-expanded="false" aria-controls="macrameItems">
+            MACRAME
+        </li>
+    </ul>
+</center>
+
+<div class="collapse" id="macrameItems">
+    <ul class="list-group">
+        <li class="list-group-item nested-list-group-item">Alpha Bracelets</li>
+        <li class="list-group-item nested-list-group-item">Alpha Keychain</li>
+        <li class="list-group-item nested-list-group-item">Bags</li>
+        <li class="list-group-item nested-list-group-item">Bracelets</li>
+        <li class="list-group-item nested-list-group-item">Single Bracelet</li>
+        <li class="list-group-item nested-list-group-item">Couple Bracelet</li>
+        <li class="list-group-item nested-list-group-item">Micro Macrame</li>
+        <li class="list-group-item nested-list-group-item">Brooch</li>
+        <li class="list-group-item nested-list-group-item">Chandelier</li>
+        <li class="list-group-item nested-list-group-item">Dream Catcher</li>
+        <li class="list-group-item nested-list-group-item">Earrings</li>
+        <li class="list-group-item nested-list-group-item">Macrame Earrings</li>
+        <li class="list-group-item nested-list-group-item">Macrame Loop</li>
+        <li class="list-group-item nested-list-group-item">Micro Macrame Dangle</li>
+        <li class="list-group-item nested-list-group-item">Friendship Bracelet</li>
+        <li class="list-group-item nested-list-group-item">Hair Pin / Hair Clips</li>
+        <li class="list-group-item nested-list-group-item">Keychain</li>
+        <li class="list-group-item nested-list-group-item">Necklace</li>
+        <li class="list-group-item nested-list-group-item">Micro Macrame</li>
+        <li class="list-group-item nested-list-group-item">Ornaments</li>
+        <li class="list-group-item nested-list-group-item">Plant Hanger</li>
+        <li class="list-group-item nested-list-group-item">Wall Display</li>
+        <li class="list-group-item nested-list-group-item">Wrist-Watch Bracelets</li>
+    </ul>
+</div>
+
+                        <li class="list-group-item">Mural</li>
+                        <li class="list-group-item">Painting</li>
+                        <li class="list-group-item">Ribbon Crafts</li>
+                        <!-- Add more categories here -->
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Bootstrap JS (necessary for collapse functionality) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var categoryModal = new bootstrap.Modal(document.getElementById('categoryModal'));
+
+        // Open modal manually
+
+        document.querySelector('a[data-bs-toggle="modal"]').addEventListener('click', function () {
+            categoryModal.show();
+        });
+
+        // Close modal manually (if needed)
+
+        document.querySelector('#categoryModal .btn-close').addEventListener('click', function () {
+            categoryModal.hide();
+        });
+    });
+</script>
+
+
+<!-- Bootstrap CSS and JavaScript -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+  <!--/ Intro Skew Star /-->
+  <div id="home" class="intro route bg-image" style="background-image: url(img/bg.jpg)">
+    <div class="overlay-itro"></div>
+    <div class="intro-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <!--<p class="display-6 color-d">Hello, world!</p>-->
+          <h1 class="intro-title mb-4">I'am Sam Deinyel</h1>
+          <p class="intro-subtitle"><span class="text-slider-items">Artist</span><strong class="text-slider"></strong></p>
+          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/ Intro Skew End /-->
+
+  <section id="about" class="about-mf sect-pt4 route">
+  <div class="container">
+  <div class="row">
+  <div class="col-sm-12">
+  <div class="box-shadow-full">
+  <div class="row">
+  <div class="col-md-6">
+  <div class="row">
+  <div class="col-sm-6 col-md-5">
+  <div class="about-img">
+  <img src="img/resume.jpg" class="img-fluid rounded b-shadow-a" alt="">
+  </div>
+  </div>
+
+      <div class="col-sm-6 col-md-7">
+      <div class="about-info">
+      <p><span class="title-s">Name: </span> <span>Sam Deinyel Dumalasco</span></p>
+      <p><span class="title-s">Profile: </span> <span>full Time Artist</span></p>
+      <p><span class="title-s">Email: </span> <span>samdumalasco@gmail.com</span></p>
+      <p><span class="title-s">Phone: </span> <span>(617) 557-0089</span></p>
+      </div>
+      </div>
+      </div>
+
+      <div class="skill-mf">
+      <p class="title-s">Skill</p>
+      <span>Painting</span> <span class="pull-right">92%</span>
+      <div class="progress">
+      <div class="progress-bar" role="progressbar" style="width: 92%;" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+
+      <span>Drawing</span> <span class="pull-right">80%</span>
+      <div class="progress">
+      <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"aria-valuemax="100"></div>
+      </div>
+
+      <span>Arts & Crafts</span> <span class="pull-right">96%</span>
+      <div class="progress">
+      <div class="progress-bar" role="progressbar" style="width: 96%" aria-valuenow="96" aria-valuemin="0"aria-valuemax="100"></div>
+      </div>
+
+     <span>Embroidery </span> <span class="pull-right">95%</span>
+     <div class="progress">
+     <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0"aria-valuemax="100"></div>
+     </div>
+
+     <span>Macrame </span> <span class="pull-right">99%</span>
+     <div class="progress">
+     <div class="progress-bar" role="progressbar" style="width: 99%" aria-valuenow="99" aria-valuemin="0"aria-valuemax="100"></div>
+     </div>
+
+     <span>Carpentry</span> <span class="pull-right">70%</span>
+     <div class="progress">
+     <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="70" aria-valuemin="0"aria-valuemax="100"></div>
+     </div>
+
+     <span> Sewing</span> <span class="pull-right">60%</span>
+     <div class="progress">
+     <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0"aria-valuemax="100"></div>
+     </div>
+
+     </div>
+     </div>
+
+     <div class="col-md-6">
+     <div class="about-me pt-4 pt-md-0">
+     <div class="title-box-2">
+     <h5 class="title-left">About me</h5>
+     </div>
+
+                 <p class="lead">
+                  Welcome to my world of creativity and imagination! I am Sam Deinyel Dumalasco, a passionate full-time artist dedicated to bringing visions to life through my art. My journey into the art world began at a young age, and over the years, I have honed my skills and developed a unique style that reflects my personality and experiences.
+                  </p>
+
+                  <p class="lead">
+                   Art, for me, is not just a profession but a way of life. It is the lens through which I view the world and the medium through which I express my thoughts, emotions, and stories. My work spans various mediums and techniques, from traditional painting and drawing to digital art and mixed media. Each piece I create is a part of my journey, infused with my love for detail, color, and storytelling.
+                  </p>
+
+                  <p class="lead">
+                   Throughout my career, I have been fortunate to showcase my work in numerous exhibitions and collaborate with other creatives on exciting projects. My art is inspired by the beauty of nature, the complexity of human emotions, and the simple yet profound moments of everyday life. 
+                  </p>
+
+                  <p class="lead">
+                   I believe that art has the power to connect people, evoke emotions, and inspire change. Through my work, I aim to touch the hearts of my audience and offer them a glimpse into my artistic vision. Thank you for joining me on this creative adventure. I hope my art resonates with you and brings a touch of beauty and inspiration to your life. 
+                  </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--/ Section Services Star /-->
+  <section id="service" class="services-mf route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a">
+              Services
+            </h3>
+            <p class="subtitle-a">
+              
+            </p>
+            <div class="line-mf"></div>
+          </div>
+        </div>
+      </div>
+
+<div class="row">
+<div class="col-md-4">
+<div class="service-box">
+<div class="service-ico">
+<span class="ico-circle"><span class="ico-circle"><i class="ion-paintbrush"></i></span>
+
+</span>
+</div>
+            
+<div class="service-content">
+<h2 class="s-title">Mural</h2>
+<p class="s-description text-center">
+
+ Mural art involves painting large artworks directly on walls, ceilings, or other large permanent surfaces. These artworks can be found both indoors and outdoors and often reflect cultural, social, or political themes. Murals can transform public spaces, making them visually vibrant and engaging, and they have been used throughout history to tell stories, celebrate heritage, and inspire communities.
+
+</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="service-box">
+<div class="service-ico">
+<span class="ico-circle"><i class="ion-ios-book-outline"></i></span>
+</div>
+
+<div class="service-content">
+<h2 class="s-title">Art Tutorial</h2>
+<p class="s-description text-center">
+ 
+ An art tutorial is a step-by-step guide designed to teach specific artistic techniques or concepts. It can be in various formats, such as videos, written instructions, or interactive lessons. Art tutorials help beginners and experienced artists learn new skills, improve their craft, and explore different styles and mediums.
+
+</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="service-box">
+<div class="service-ico">
+<span class="ico-circle"><i class="ion-paintbucket"></i></span>
+</div>
+
+<div class="service-content">
+<h2 class="s-title">Event Decorator</h2>
+<p class="s-description text-center">
+
+
+Event decoration involves designing and setting up aesthetic elements for various events, such as weddings, parties, and corporate functions. It includes arranging flowers, lighting, furniture, and themed props to create a cohesive and visually appealing atmosphere that enhances the overall experience for attendees.
+              
+</p>
+</div>
+</div>
+</div>
+      
+            
+
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+
+
+
+  <!--/ Section Services End /-->
+
+         <div class="section-counter paralax-mf bg-image" style="background-image: url(img/bg1.jpg)">
+         <div class="overlay-mf"></div>
+         <div class="container">
+         <div class="row">
+         <div class="col-sm-3 col-lg-3">
+         <div class="counter-box">
+         <div class="counter-ico">
+         <span class="ico-circle"><i class="ion-checkmark-round"></i></span>
+         </div>
+
+         <div class="counter-num">
+         <p class="counter">525</p>
+         <span class="counter-text">WORKS COMPLETED</span>
+         </div>
+         </div>
+         </div>
+
+         <div class="col-sm-3 col-lg-3">
+         <div class="counter-box pt-4 pt-md-0">
+         <div class="counter-ico">
+         <span class="ico-circle"><i class="ion-ios-calendar-outline"></i></span>
+         </div>
+
+         <div class="counter-num">
+         <p class="counter">9</p>
+         <span class="counter-text">YEARS OF EXPERIENCE</span>
+         </div>
+         </div>
+         </div>
+
+          <div class="col-sm-3 col-lg-3">
+          <div class="counter-box pt-4 pt-md-0">
+          <div class="counter-ico">
+          <span class="ico-circle"><i class="ion-ios-people"></i></span>
+          </div>
+
+          <div class="counter-num">
+          <p class="counter">550</p>
+          <span class="counter-text">TOTAL CLIENTS</span>
+          </div>
+          </div>
+          </div>
+
+          <div class="col-sm-3 col-lg-3">
+          <div class="counter-box pt-4 pt-md-0">
+          <div class="counter-ico">
+          <span class="ico-circle"><i class="ion-ribbon-a"></i></span>
+          </div>
+
+          <div class="counter-num">
+          <p class="counter">3</p>
+          <span class="counter-text">AWARD WON</span>
+  
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+  
+  <section id="work" class="portfolio-mf sect-pt4 route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a">
+              Portfolio
+            </h3>
+            <p class="subtitle-a">
+              MY ART WORKS
+            </p>
+            <div class="line-mf"></div>
+          </div>
+        </div>
+      </div>
+
+                <div class="row">
+                <div class="col-md-4">
+                <div class="work-box">
+                <a href="img/bg1.jpg" data-lightbox="gallery-mf">
+                <div class="work-img">
+                <img src="img/bg1.jpg" alt="" class="img-fluid">
+                </div>
+
+                <div class="work-content">
+                <div class="row">
+                <div class="col-sm-8">
+                <h2 class="w-title">Abstract Butterfly</h2>
+                <div class="w-more">
+                <span class="w-ctegory">Mural Art Painting</span> / <span class="w-date">08 October. 2022</span>
+                </div>
+                </div>
+
+                <div class="col-sm-4">
+                <div class="w-like">
+                <span class="ion-ios-plus-outline"></span>
+                </div>
+                </div>
+                </div>
+                </div>
+                </a>
+                </div>
+                </div>
+
+          <div class="col-md-4">
+          <div class="work-box">
+          <a href="img/bg2.jpg" data-lightbox="gallery-mf">
+          <div class="work-img">
+          <img src="img/bg2.jpg" alt="" class="img-fluid">
+          </div>
+
+          <div class="work-content">
+          <div class="row">
+          <div class="col-sm-8">
+          <h2 class="w-title">Rvier & Forest</h2>
+          <div class="w-more">
+          <span class="w-ctegory">Hand Painting</span> / <span class="w-date">26 May. 2016</span>
+          </div>
+          </div>
+
+          <div class="col-sm-4">
+          <div class="w-like">
+          <span class="ion-ios-plus-outline"></span>
+          </div>
+          </div>
+          </div>
+          </div>
+          </a>
+          </div>
+          </div>
+
+         <div class="col-md-4">
+         <div class="work-box">
+         <a href="img/.jpg" data-lightbox="gallery-mf">
+         <div class="work-img">
+         <img src="img/.jpg" alt="" class="img-fluid">
+         </div>
+
+         <div class="work-content">
+         <div class="row">
+         <div class="col-sm-8">
+                    <h2 class="w-title"></h2>
+                    <div class="w-more">
+                      <span class="w-ctegory"> <span class="w-date"> </span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="img/.jpg" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="img/.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title"></h2>
+                    <div class="w-more">
+                      <span class="w-ctegory"></span> / <span class="w-date"> </span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="img/.jpg" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="img/.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title"></h2>
+                    <div class="w-more">
+                      <span class="w-ctegory"></span>  <span class="w-date"> </span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="img/jpg" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="img/.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title"> </h2>
+                    <div class="w-more">
+                      <span class="w-ctegory"> </span>  <span class="w-date"> </span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+<br> <br>
+
+<!--Gallery-->
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+
+    </ol>
+
+    <center>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/1.jpg" class="d-block w-50" alt="Image 1">
+            </div>
+            <div class="carousel-item">
+                <img src="img/2.jpg" class="d-block w-50" alt="Image 2">
+            </div>
+            <div class="carousel-item">
+                <img src="img/3.jpg" class="d-block w-50" alt="Image 3">
+            </div>
+            <div class="carousel-item">
+                <img src="img/4.jpg" class="d-block w-50" alt="Image 4">
+            </div>
+            <div class="carousel-item">
+                <img src="img/5.jpg" class="d-block w-50" alt="Image 5">
+            </div>
+            <div class="carousel-item">
+                <img src="img/6.jpg" class="d-block w-50" alt="Image 6">
+            </div>
+        </div>
+    </center>
+
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<center>
+    <button type="button" class="btn btn-primary mt-3">View More</button>
+</center>
+
+
+
+
+  <section id="blog" class="blog-mf sect-pt4 route">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a">
+              Blog
+            </h3>
+           <p class="subtitle-a">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </p>
+            <div class="line-mf"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card card-blog">
+            <div class="card-img">
+              <a href="blog-single.html"><img src="img/post-1.jpg" alt="" class="img-fluid"></a>
+            </div>
+            <div class="card-body">
+              <div class="card-category-box">
+                <div class="card-category">
+                  <h6 class="category">Travel</h6>
+                </div>
+              </div>
+              <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
+              <p class="card-description">
+                Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
+                a pellentesque nec,
+                egestas non nisi.
+              </p>
+            </div>
+            <div class="card-footer">
+              <div class="post-author">
+                <a href="#">
+                  <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
+                  <span class="author">Morgan Freeman</span>
+                </a>
+              </div>
+              <div class="post-date">
+                <span class="ion-ios-clock-outline"></span> 10 min
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-blog">
+            <div class="card-img">
+              <a href="blog-single.html"><img src="img/post-2.jpg" alt="" class="img-fluid"></a>
+            </div>
+            <div class="card-body">
+              <div class="card-category-box">
+                <div class="card-category">
+                  <h6 class="category">Web Design</h6>
+                </div>
+              </div>
+              <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
+              <p class="card-description">
+                Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
+                a pellentesque nec,
+                egestas non nisi.
+              </p>
+            </div>
+            <div class="card-footer">
+              <div class="post-author">
+                <a href="#">
+                  <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
+                  <span class="author">Morgan Freeman</span>
+                </a>
+              </div>
+              <div class="post-date">
+                <span class="ion-ios-clock-outline"></span> 10 min
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-blog">
+            <div class="card-img">
+              <a href="blog-single.html"><img src="img/post-3.jpg" alt="" class="img-fluid"></a>
+            </div>
+            <div class="card-body">
+              <div class="card-category-box">
+                <div class="card-category">
+                  <h6 class="category">Web Design</h6>
+                </div>
+              </div>
+              <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
+              <p class="card-description">
+                Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
+                a pellentesque nec,
+                egestas non nisi.
+              </p>
+            </div>
+            <div class="card-footer">
+              <div class="post-author">
+                <a href="#">
+                  <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
+                  <span class="author">Morgan Freeman</span>
+                </a>
+              </div>
+              <div class="post-date">
+                <span class="ion-ios-clock-outline"></span> 10 min
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!--/ Section Contact-Footer Star /-->
+  <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(img/overlay-bg.jpg)">
+    <div class="overlay-mf"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="contact-mf">
+            <div id="contact" class="box-shadow-full">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="title-box-2">
+                    <h5 class="title-left">
+                      Send Message Us
+                    </h5>
+                  </div>
+                  <div>
+                      <form action="" method="post" role="form" class="contactForm">
+                      <div id="sendmessage">Your message has been sent. Thank you!</div>
+                      <div id="errormessage"></div>
+                      <div class="row">
+                        <div class="col-md-12 mb-3">
+                          <div class="form-group">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                            <div class="validation"></div>
+                          </div>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                          <div class="form-group">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                            <div class="validation"></div>
+                          </div>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                              <div class="validation"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                          <div class="form-group">
+                            <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                            <div class="validation"></div>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="title-box-2 pt-4 pt-md-0">
+                    <h5 class="title-left">
+                      Get in Touch
+                    </h5>
+                  </div>
+                  <div class="more-info">
+                    <p class="lead">
+                      
+                    </p>
+                    <ul class="list-ico">
+                    <li>
+                    <span class="ion-ios-location">
+                    </span>                        </li>
+                      <li><span class="ion-ios-telephone"></span>     </li>
+                      <li><span class="ion-email"></span>     </li>
+                    </ul>
+                  </div>
+                  <div class="socials">
+                    <ul>
+                      <li><a href=""><span class="ico-circle"><i class="ion-social-facebook"></i></span></a></li>
+                      <li><a href=""><span class="ico-circle"><i class="ion-social-instagram"></i></span></a></li>
+                      <li><a href=""><span class="ico-circle"><i class="ion-social-pinterest"></i></span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="copyright-box">
+              <p class="copyright">&copy; Copyright <strong>ArtFolio</strong>. All Rights Reserved</p>
+              <div class="credits">
+                <!--
+                  All the links in the footer should remain intact.
+                  You can delete the links only if you purchased the pro version.
+                  Licensing information: https://bootstrapmade.com/license/
+                  Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
+                -->
+                Designed by JD
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <!--/ Section Contact-footer End /-->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <div id="preloader"></div>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/popper/popper.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/counterup/jquery.waypoints.min.js"></script>
+  <script src="lib/counterup/jquery.counterup.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/typed/typed.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
