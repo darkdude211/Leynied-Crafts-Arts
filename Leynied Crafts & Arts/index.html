@@ -1,1 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Leynied Craft and Arts</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
 
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body id="page-top">
+
+  <!--/ Nav Star /-->
+<nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand js-scroll" href="#page-top">ArtFolio</a>
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDefault"
+            aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link js-scroll active" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link js-scroll" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link js-scroll" href="#service">Services</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link js-scroll" href="#work">Work</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link js-scroll" href="#blog">Blog</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link js-scroll" href="#contact">Contact</a>
+        </li>
+
+        <li class="nav-item">
+    <a class="nav-link js-scroll" href="#" data-bs-toggle="modal" data-bs-target="#categoryModal">Category</a>
+</li>
+
+    </ul>
+</div>
+</nav>
+
+ <style>
+/* Define the fade-in animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply the animation to the modal */
+.modal.fade.show {
+    animation: fadeInUp 0.5s ease-out;
+}
+
+/* Additional styling for the list group items */
+.list-group-item {
+    border: none;
+    padding: 20px 25px;
+    font-size: 18px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Darker design for specific items */
+.list-group-item.earrings,
+.list-group-item.hair-clip,
+.list-group-item.necklace {
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3), 0 20px 40px rgba(0, 0, 0, 0.4); /* Darker shadow */
+    background-color: #f8f9fa; /* Slightly darker background color */
+}
+
+/* Bold text and monochromatic color for the BEADWORK item */
+.list-group-item.beadwork {
+    font-weight: bold; /* Make text bold */
+    color: #333; /* Monochromatic color (dark gray) */
+}
+
+/* Remove color changes on hover */
+.list-group-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2), 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Remove background color changes for odd and even list items */
+.list-group-item:nth-child(odd),
+.list-group-item:nth-child(even) {
+    background-color: transparent; /* Or a default color if needed */
+}
+
+/* Additional styling for nested list items */
+.nested-list-group-item {
+    padding-left: 40px;
+    background-color: transparent; /* Or a default color if needed */
+    color: #33c1ff; /* Cool color (Light Blue) */
+    list-style-type: disc; /* Bullet style */
+    margin-bottom: 10px; /* Space between items */
+}
+
+/* Optional: Add hover effect for nested items */
+.nested-list-group-item:hover {
+    color: #0099ff; /* Slightly different cool color on hover */
+}
+
+/* Remove color styling from the custom-color class */
+.custom-color {
+    color: inherit; /* Inherit color from parent element */
+}
+
+
+/* Remove the default list styling for .list-group-item */
+.list-group-item {
+    list-style-type: none; /* Remove default list bullets */
+}
+
+/* Existing CSS for list-group-item hover effect */
+.list-group-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2), 0 12px 24px rgba(0, 0, 0, 0.2);
+    background-color: #d4edda; /* Light green background color */
+}
+
+
+.beadwork {
+background-image: url('img/3.jpg');
+background-size: cover;
+background-position: center;
+        }
+
+.macrame {
+        font-weight: bold;
+    }
+
+   .embroidery {
+        font-weight: bold;
+    }
+
+.embroidery {
+background-image: url('img/embroidery.jpg');
+background-size: cover;
+background-position: center;
+
+.macrame {
+background-image: url('img/Macrame.jpg');
+background-size: cover;
+background-position: center;
+
+
+    </style>
+
+</head>
+<body>
+    <!-- Category Modal -->
+    <div class="modal fade" id="categoryModal" tabindex="-1" aria-labelledby="categoryModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="categoryModalLabel">Categories</h3> 
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h4>Gallery</h4> <br>
+
+                      <center>
+<ul class="list-group">
+    <li class="list-group-item beadwork" data-bs-toggle="collapse" data-bs-target="#beadworkItems" aria-expanded="false" aria-controls="beadworkItems">
+        BEADWORK
+    </li>
+    </ul>
+
+                      </center>
+
+                        <div class="collapse" id="beadworkItems">
+                            <ul class="list-group">
+                                <li class="list-group-item nested-list-group-item">Earrings</li>
+                                <li class="list-group-item nested-list-group-item">Hair Clip</li>
+                                <li class="list-group-item nested-list-group-item">Necklace</li>
+                            </ul>
+                        </div>
+                        <br>
+
+                        <center>
+    <ul class="list-group">
+        <li class="list-group-item embroidery" data-bs-toggle="collapse" data-bs-target="#embroideryItems" aria-expanded="false" aria-controls="embroideryItems">
+            EMBROIDERY
+        </li>
+    </ul>
+</center>
+
+<div class="collapse" id="embroideryItems">
+    <ul class="list-group">
+        <li class="list-group-item nested-list-group-item">Friendship Bracelets</li>
+        <li class="list-group-item nested-list-group-item">Satin Embroidery</li>
+    </ul>
+</div>
+
+<br>
+
+                        <center>
+    <ul class="list-group">
+        <li class="list-group-item macrame" data-bs-toggle="collapse" data-bs-target="#macrameItems" aria-expanded="false" aria-controls="macrameItems">
+            MACRAME
+        </li>
+    </ul>
+</center>
+
+<div class="collapse" id="macrameItems">
+    <ul class="list-group">
+        <li class="list-group-item nested-list-group-item">Alpha Bracelets</li>
+        <li class="list-group-item nested-list-group-item">Alpha Keychain</li>
+        <li class="list-group-item nested-list-group-item">Bags</li>
+        <li class="list-group-item nested-list-group-item">Bracelets</li>
+        <li class="list-group-item nested-list-group-item">Single Bracelet</li>
+        <li class="list-group-item nested-list-group-item">Couple Bracelet</li>
+        <li class="list-group-item nested-list-group-item">Micro Macrame</li>
+        <li class="list-group-item nested-list-group-item">Brooch</li>
+        <li class="list-group-item nested-list-group-item">Chandelier</li>
+        <li class="list-group-item nested-list-group-item">Dream Catcher</li>
+        <li class="list-group-item nested-list-group-item">Earrings</li>
+        <li class="list-group-item nested-list-group-item">Macrame Earrings</li>
+        <li class="list-group-item nested-list-group-item">Macrame Loop</li>
+        <li class="list-group-item nested-list-group-item">Micro Macrame Dangle</li>
+        <li class="list-group-item nested-list-group-item">Friendship Bracelet</li>
+        <li class="list-group-item nested-list-group-item">Hair Pin / Hair Clips</li>
+        <li class="list-group-item nested-list-group-item">Keychain</li>
+        <li class="list-group-item nested-list-group-item">Necklace</li>
+        <li class="list-group-item nested-list-group-item">Micro Macrame</li>
+        <li class="list-group-item nested-list-group-item">Ornaments</li>
+        <li class="list-group-item nested-list-group-item">Plant Hanger</li>
+        <li class="list-group-item nested-list-group-item">Wall Display</li>
+        <li class="list-group-item nested-list-group-item">Wrist-Watch Bracelets</li>
+    </ul>
+</div>
+
+                        <li class="list-group-item">Mural</li>
+                        <li class="list-group-item">Painting</li>
+                        <li class="list-group-item">Ribbon Crafts</li>
+                        <!-- Add more categories here -->
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Bootstrap JS (necessary for collapse functionality) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var categoryModal = new bootstrap.Modal(document.getElementById('categoryModal'));
+
+        // Open modal manually
+
+        document.querySelector('a[data-bs-toggle="modal"]').addEventListener('click', function () {
+            categoryModal.show();
+        });
+
+        // Close modal manually (if needed)
+
+        document.querySelector('#categoryModal .btn-close').addEventListener('click', function () {
+            categoryModal.hide();
+        });
+    });
+</script>
+
+
+<!-- Bootstrap CSS and JavaScript -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+  <!--/ Intro Skew Star /-->
+  <div id="home" class="intro route bg-image" style="background-image: url(img/bg.jpg)">
+    <div class="overlay-itro"></div>
+    <div class="intro-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <!--<p class="display-6 color-d">Hello, world!</p>-->
+          <h1 class="intro-title mb-4">I'am Sam Deinyel</h1>
+          <p class="intro-subtitle"><span class="text-slider-items">Artist</span><strong class="text-slider"></strong></p>
+          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/ Intro Skew End /-->
+
+  <section id="about" class="about-mf sect-pt4 route">
+  <div class="container">
+  <div class="row">
+  <div class="col-sm-12">
+  <div class="box-shadow-full">
+  <div class="row">
+  <div class="col-md-6">
+  <div class="row">
+  <div class="col-sm-6 col-md-5">
+  <div class="about-img">
+  <img src="img/resume.jpg" class="img-fluid rounded b-shadow-a" alt="">
+  </div>
+  </div>
+
+      <div class="col-sm-6 col-md-7">
+      <div class="about-info">
+      <p><span class="title-s">Name: </span> <span>Sam Deinyel Dumalasco</span></p>
+      <p><span class="title-s">Profile: </span> <span>full Time Artist</span></p>
+      <p><span class="title-s">Email: </span> <span>samdumalasco@gmail.com</span></p>
+      <p><span class="title-s">Phone: </span> <span>(617) 557-0089</span></p>
+      </div>
+      </div>
+      </div>
+
+      <div class="skill-mf">
+      <p class="title-s">Skill</p>
+      <span>Painting</span> <span class="pull-right">92%</span>
+      <div class="progress">
+      <div class="progress-bar" role="progressbar" style="width: 92%;" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+
+      <span>Drawing</span> <span class="pull-right">80%</span>
+      <div class="progress">
+      <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"aria-valuemax="100"></div>
+      </div>
+
+      <span>Arts & Crafts</span> <span class="pull-right">96%</span>
+      <div class="progress">
+      <div class="progress-bar" role="progressbar" style="width: 96%" aria-valuenow="96" aria-valuemin="0"aria-valuemax="100"></div>
+      </div>
+
+     <span>Embroidery </span> <span class="pull-right">95%</span>
+     <div class="progress">
+     <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0"aria-valuemax="100"></div>
+     </div>
+
+     <span>Macrame </span> <span class="pull-right">99%</span>
+     <div class="progress">
+     <div class="progress-bar" role="progressbar" style="width: 99%" aria-valuenow="99" aria-valuemin="0"aria-valuemax="100"></div>
+     </div>
+
+     <span>Carpentry</span> <span class="pull-right">70%</span>
+     <div class="progress">
+     <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="70" aria-valuemin="0"aria-valuemax="100"></div>
+     </div>
+
+     <span> Sewing</span> <span class="pull-right">60%</span>
+     <div class="progress">
+     <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0"aria-valuemax="100"></div>
+     </div>
+
+     </div>
+     </div>
