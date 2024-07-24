@@ -175,113 +175,58 @@ background-image: url('img/Embroidery.jpg');
 background-size: cover;
 background-position: center;
 
+.macrame-bg {
+            background-image: url('img/Macrame.jpg'); /* Replace with your image path */
+            background-size: cover;
+            background-position: center;
+            color: white; /* Optional: to make the text readable */
+        }
 
     </style>
 
 </head>
+
 <body>
+
     <!-- Category Modal -->
     <div class="modal fade" id="categoryModal" tabindex="-1" aria-labelledby="categoryModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h3 class="modal-title" id="categoryModalLabel">Categories</h3> 
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <h4>Gallery</h4> <br>
+    <div class="modal-dialog">
+    <div class="modal-content">
+    <div class="modal-header">
+    <h3 class="modal-title" id="categoryModalLabel">Categories</h3> 
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
 
-                      <center>
+    <div class="modal-body">
+    <h4>Gallery</h4> <br>
+
+<center>
 <ul class="list-group">
-    <li class="list-group-item beadwork" data-bs-toggle="collapse" data-bs-target="#beadworkItems" aria-expanded="false" aria-controls="beadworkItems">
-        BEADWORK
-    </li>
-    </ul>
-    </center>
+<li class="list-group-item beadwork" data-bs-toggle="collapse" data-bs-target="#beadworkItems" aria-expanded="false" aria-controls="beadworkItems"> BEADWORK </li>
+</ul>
+</center>
+
+   
 
       <div class="collapse" id="beadworkItems">
-      <ul class="list-group">
+      <ul class="list-group"><br>
       <li class="list-group-item nested-list-group-item" id="earringsItem">Earrings</li>
-      <li class="list-group-item nested-list-group-item">Hair Clip</li>
-      <li class="list-group-item nested-list-group-item">Necklace</li>
+      <li class="list-group-item nested-list-group-item" id="hairclipItem">Hair-clip</li>
+      <li class="list-group-item nested-list-group-item" id="necklaceItem">Necklace</li>
       </ul>
       </div>
       <br>
 
 
-    <center>
-    <ul class="list-group">
-        <li class="list-group-item embroidery" data-bs-toggle="collapse" data-bs-target="#embroideryItems" aria-expanded="false" aria-controls="embroideryItems">
-            EMBROIDERY
-        </li>
-    </ul>
-</center>
-
-<div class="collapse" id="embroideryItems">
-    <ul class="list-group">
-        <li class="list-group-item nested-list-group-item">Friendship Bracelets</li>
-        <li class="list-group-item nested-list-group-item">Satin Embroidery</li>
-    </ul>
-</div>
-
-<br>
-
-                        <center>
-    <ul class="list-group">
-        <li class="list-group-item macrame" data-bs-toggle="collapse" data-bs-target="#macrameItems" aria-expanded="false" aria-controls="macrameItems">
-            MACRAME
-        </li>
-    </ul>
-</center>
-
-<div class="collapse" id="macrameItems">
-    <ul class="list-group">
-        <li class="list-group-item nested-list-group-item">Alpha Bracelets</li>
-        <li class="list-group-item nested-list-group-item">Alpha Keychain</li>
-        <li class="list-group-item nested-list-group-item">Bags</li>
-        <li class="list-group-item nested-list-group-item">Bracelets</li>
-        <li class="list-group-item nested-list-group-item">Single Bracelet</li>
-        <li class="list-group-item nested-list-group-item">Couple Bracelet</li>
-        <li class="list-group-item nested-list-group-item">Micro Macrame</li>
-        <li class="list-group-item nested-list-group-item">Brooch</li>
-        <li class="list-group-item nested-list-group-item">Chandelier</li>
-        <li class="list-group-item nested-list-group-item">Dream Catcher</li>
-        <li class="list-group-item nested-list-group-item">Earrings</li>
-        <li class="list-group-item nested-list-group-item">Macrame Earrings</li>
-        <li class="list-group-item nested-list-group-item">Macrame Loop</li>
-        <li class="list-group-item nested-list-group-item">Micro Macrame Dangle</li>
-        <li class="list-group-item nested-list-group-item">Friendship Bracelet</li>
-        <li class="list-group-item nested-list-group-item">Hair Pin / Hair Clips</li>
-        <li class="list-group-item nested-list-group-item">Keychain</li>
-        <li class="list-group-item nested-list-group-item">Necklace</li>
-        <li class="list-group-item nested-list-group-item">Micro Macrame</li>
-        <li class="list-group-item nested-list-group-item">Ornaments</li>
-        <li class="list-group-item nested-list-group-item">Plant Hanger</li>
-        <li class="list-group-item nested-list-group-item">Wall Display</li>
-        <li class="list-group-item nested-list-group-item">Wrist-Watch Bracelets</li>
-    </ul>
-</div>
-
-                        <li class="list-group-item">Mural</li>
-                        <li class="list-group-item">Painting</li>
-                        <li class="list-group-item">Ribbon Crafts</li>
-                        <!-- Add more categories here -->
-                    </ul>
-                </div>
                 <div class="modal-footer">
-                  
+                </ul>
+              </div>
                 </div>
             </div>
         </div>
     </div>
 
-<style>
-    .custom-close-button {
-    background-color: red !important; /* Set your desired background color here */
-    border-color: red !important; /* Set the border color to match */
-}
 
-</style>
 
 <!-- Bootstrap JS (necessary for collapse functionality) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -503,11 +448,6 @@ Event decoration involves designing and setting up aesthetic elements for variou
 </div>
 </div>
 </section>
-
-
-
-
-
   <!--/ Section Services End /-->
 
          <div class="section-counter paralax-mf bg-image" style="background-image: url(img/bg1.jpg)">
@@ -569,7 +509,150 @@ Event decoration involves designing and setting up aesthetic elements for variou
   </div>
   </div>
   </div>
+  <!-- Necklace Modal -->
+<div class="modal fade" id="necklaceModal" tabindex="-1" aria-labelledby="necklaceModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="necklaceModalLabel">Necklace Gallery</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Add your gallery content here -->
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <img src="img/Necklace/N1.jpg" class="img-fluid custom-img" alt="Necklace Image 1">
+            </div>
+            <div class="col-md-4">
+              <img src="img/Necklace/N2.jpg" class="img-fluid custom-img" alt="Necklace Image 2">
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <!-- Add other buttons if needed -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- List Item -->
+<li class="list-group-item nested-list-group-item" id="necklaceItem">Necklace</li>
+
+<!-- JavaScript to show modal on click -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var necklaceModal = new bootstrap.Modal(document.getElementById('necklaceModal'));
+    var necklaceItem = document.getElementById('necklaceItem');
+
+    necklaceItem.addEventListener('click', function () {
+      necklaceModal.show();
+    });
+
+    document.getElementById('necklaceModal').addEventListener('shown.bs.modal', function () {
+      console.log('Necklace modal is now shown');
+    });
+
+    document.getElementById('necklaceModal').addEventListener('hidden.bs.modal', function () {
+      console.log('Necklace modal is now hidden');
+    });
+  });
+</script>
+
+<!-- Hairclip Modal -->
+
+<div class="modal fade" id="hairclipModal" tabindex="-1" aria-labelledby="hairclipModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="hairclipModalLabel">Hair-clip Gallery</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Add your gallery content here -->
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <img src="img/Hairclip/H1.jpg" class="img-fluid custom-img" alt="Hairclip Image 1">
+            </div>
+
+            <div class="col-md-4">
+              <img src="img/Hairclip/H2.jpg" class="img-fluid custom-img" alt="Hairclip Image 2">
+            </div>
+
+            <div class="col-md-4">
+              <img src="img/Hairclip/H3.jpg" class="img-fluid custom-img" alt="Hairclip Image 3">
+            </div><br><br><br><br><br><br><br><br><br><br><br>
+            
+            <div class="col-md-4">
+              <img src="img/Hairclip/H4.jpg" class="img-fluid custom-img" alt="Hairclip Image 3">
+            </div><br><br><br><br><br><br><br><br><br><br><br>
+
+            <div class="col-md-4">
+              <img src="img/Hairclip/H5.jpg" class="img-fluid custom-img" alt="Hairclip Image 3">
+            </div><br><br><br><br><br><br><br><br><br><br><br>
+
+            <div class="col-md-4">
+              <img src="img/Hairclip/H6.jpg" class="img-fluid custom-img" alt="Hairclip Image 3">
+            </div><br><br><br><br><br><br><br><br><br><br><br>
+
+            <div class="col-md-4">
+              <img src="img/Hairclip/H7.jpg" class="img-fluid custom-img" alt="Hairclip Image 3">
+            </div><br><br><br><br><br><br><br><br><br><br><br>
+
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <!-- Add other buttons if needed -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- List Item -->
+<li class="list-group-item nested-list-group-item" id="hairclipItem">Hair-clip</li>
+
+<!-- JavaScript to show modal on click -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var hairclipModal = new bootstrap.Modal(document.getElementById('hairclipModal'));
+    var hairclipItem = document.getElementById('hairclipItem');
+
+    hairclipItem.addEventListener('click', function () {
+      hairclipModal.show();
+    });
+
+    document.getElementById('hairclipModal').addEventListener('shown.bs.modal', function () {
+      console.log('Hairclip modal is now shown');
+    });
+
+    document.getElementById('hairclipModal').addEventListener('hidden.bs.modal', function () {
+      console.log('Hairclip modal is now hidden');
+    });
+  });
+</script>
+      
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <!-- Add other buttons if needed -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+
+.custom-img {
+  width: 120%;
+  height: 230px; /* Set your desired fixed height */
+  object-fit: cover; /* Ensures the image covers the area, maintaining aspect ratio */
+}
+</style>
   <!-- Modal  Area -->
   <div class="modal fade" id="earringsModal" tabindex="-1" aria-labelledby="earringsModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -615,20 +698,23 @@ Event decoration involves designing and setting up aesthetic elements for variou
      <div class="col-md-4">
       <img src="img/Earrings/earrings8.jpg" class="img-fluid custom-img" alt="Earrings Image 8">
     </div><br><br><br><br><br><br><br><br><br><br><br>
-    
+
      <div class="col-md-4">
       <img src="img/Earrings/earrings9.jpg" class="img-fluid custom-img" alt="Earrings Image 9">
     </div><br><br><br><br><br><br><br><br><br><br><br>
 
      <div class="col-md-4">
       <img src="img/Earrings/earrings10.jpg" class="img-fluid custom-img" alt="Earrings Image 10">
-    </div>
-
-
-    <!-- Add more images as needed -->
   </div>
   </div>
-
+  </div>
+  <div class="modal-footer">
+         
+</div>
+</div>
+</div>
+</div>
+</div>
 
 <style>
 .custom-img {
@@ -640,10 +726,7 @@ Event decoration involves designing and setting up aesthetic elements for variou
     background-color: red; /* Set your desired background color here */
     border-color: red; /* Optional: Set the border color to match */
 }
-
-
 </style>
-
   <!-- JavaScript -->
   <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -656,12 +739,20 @@ Event decoration involves designing and setting up aesthetic elements for variou
     });
   </script>
 
-     <div class="modal-footer">
-         
-        </div>
-      </div>
-    </div>
-  </div>
+<center>
+  <ul class="list-group">
+      <li class="list-group-item embroidery" data-bs-toggle="collapse" data-bs-target="#embroideryItems" aria-expanded="false" aria-controls="embroideryItems">
+          EMBROIDERY
+      </li>
+  </ul>
+</center>
+
+
+<div class="collapse" id="embroideryItems">
+  <ul class="list-group">
+      <li class="list-group-item nested-list-group-item">Friendship Bracelets</li>
+      <li class="list-group-item nested-list-group-item">Satin Embroidery</li>
+  </ul>
 </div>
 
 
