@@ -1,0 +1,115 @@
+.custom-img {
+  width: 120%;
+  height: 230px; /* Set your desired fixed height */
+  object-fit: cover; /* Ensures the image covers the area, maintaining aspect ratio */
+}
+.custom-close-button {
+    background-color: red; /* Set your desired background color here */
+    border-color: red; /* Optional: Set the border color to match */
+}
+
+
+.beadwork {
+    background-image: url('img/3.jpg');
+    background-size: cover;
+    background-position: center;
+            }
+    
+      .macrame {
+            font-weight: bold;
+        }
+    
+       .embroidery {
+            font-weight: bold;
+        }
+    
+    .embroidery {
+    background-image: url('img/Embroidery.jpg');
+    background-size: cover;
+    background-position: center;
+
+    /* Define the fade-in animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply the animation to the modal */
+.modal.fade.show {
+    animation: fadeInUp 0.5s ease-out;
+}
+
+/* Additional styling for the list group items */
+.list-group-item {
+    border: none;
+    padding: 20px 25px;
+    font-size: 18px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Darker design for specific items */
+.list-group-item.earrings,
+.list-group-item.hair-clip,
+.list-group-item.necklace {
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3), 0 20px 40px rgba(0, 0, 0, 0.4); /* Darker shadow */
+    background-color: #f8f9fa; /* Slightly darker background color */
+}
+
+/* Bold text and monochromatic color for the BEADWORK item */
+.list-group-item.beadwork {
+    font-weight: bold; /* Make text bold */
+    color: #333; /* Monochromatic color (dark gray) */
+}
+
+/* Remove color changes on hover */
+.list-group-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2), 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Remove background color changes for odd and even list items */
+.list-group-item:nth-child(odd),
+.list-group-item:nth-child(even) {
+    background-color: transparent; /* Or a default color if needed */
+}
+
+/* Additional styling for nested list items */
+.nested-list-group-item {
+    padding-left: 40px;
+    background-color: transparent; /* Or a default color if needed */
+    color: #33c1ff; /* Cool color (Light Blue) */
+    list-style-type: disc; /* Bullet style */
+    margin-bottom: 10px; /* Space between items */
+}
+
+/* Optional: Add hover effect for nested items */
+.nested-list-group-item:hover {
+    color: #0099ff; /* Slightly different cool color on hover */
+}
+
+/* Remove color styling from the custom-color class */
+.custom-color {
+    color: inherit; /* Inherit color from parent element */
+}
+
+
+/* Remove the default list styling for .list-group-item */
+.list-group-item {
+    list-style-type: none; /* Remove default list bullets */
+}
+
+/* Existing CSS for list-group-item hover effect */
+.list-group-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2), 0 12px 24px rgba(0, 0, 0, 0.2);
+    background-color: #d4edda; /* Light green background color */
+}
