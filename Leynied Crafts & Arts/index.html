@@ -22,6 +22,7 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/gallery.modal.css" rel="stylesheet">
 
 
 </head>
@@ -68,121 +69,6 @@
 </div>
 </nav>
 
- <style>
-/* Define the fade-in animation */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Apply the animation to the modal */
-.modal.fade.show {
-    animation: fadeInUp 0.5s ease-out;
-}
-
-/* Additional styling for the list group items */
-.list-group-item {
-    border: none;
-    padding: 20px 25px;
-    font-size: 18px;
-    margin-bottom: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Darker design for specific items */
-.list-group-item.earrings,
-.list-group-item.hair-clip,
-.list-group-item.necklace {
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3), 0 20px 40px rgba(0, 0, 0, 0.4); /* Darker shadow */
-    background-color: #f8f9fa; /* Slightly darker background color */
-}
-
-/* Bold text and monochromatic color for the BEADWORK item */
-.list-group-item.beadwork {
-    font-weight: bold; /* Make text bold */
-    color: #333; /* Monochromatic color (dark gray) */
-}
-
-/* Remove color changes on hover */
-.list-group-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2), 0 12px 24px rgba(0, 0, 0, 0.2);
-}
-
-/* Remove background color changes for odd and even list items */
-.list-group-item:nth-child(odd),
-.list-group-item:nth-child(even) {
-    background-color: transparent; /* Or a default color if needed */
-}
-
-/* Additional styling for nested list items */
-.nested-list-group-item {
-    padding-left: 40px;
-    background-color: transparent; /* Or a default color if needed */
-    color: #33c1ff; /* Cool color (Light Blue) */
-    list-style-type: disc; /* Bullet style */
-    margin-bottom: 10px; /* Space between items */
-}
-
-/* Optional: Add hover effect for nested items */
-.nested-list-group-item:hover {
-    color: #0099ff; /* Slightly different cool color on hover */
-}
-
-/* Remove color styling from the custom-color class */
-.custom-color {
-    color: inherit; /* Inherit color from parent element */
-}
-
-
-/* Remove the default list styling for .list-group-item */
-.list-group-item {
-    list-style-type: none; /* Remove default list bullets */
-}
-
-/* Existing CSS for list-group-item hover effect */
-.list-group-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2), 0 12px 24px rgba(0, 0, 0, 0.2);
-    background-color: #d4edda; /* Light green background color */
-}
-
-
-.beadwork {
-background-image: url('img/3.jpg');
-background-size: cover;
-background-position: center;
-        }
-
-.macrame {
-        font-weight: bold;
-    }
-
-   .embroidery {
-        font-weight: bold;
-    }
-
-.embroidery {
-background-image: url('img/Embroidery.jpg');
-background-size: cover;
-background-position: center;
-
-.macrame-bg {
-            background-image: url('img/Macrame.jpg'); /* Replace with your image path */
-            background-size: cover;
-            background-position: center;
-            color: white; /* Optional: to make the text readable */
-        }
-
-    </style>
 
 </head>
 
@@ -218,18 +104,16 @@ background-position: center;
       <br>
 
       <center>
-        <ul class="list-group">
-            <li class="list-group-item embroidery" data-bs-toggle="collapse" data-bs-target="#embroideryItems" aria-expanded="false" aria-controls="embroideryItems">
-                EMBROIDERY
-            </li>
-        </ul>
-    </center>
+      <ul class="list-group">
+      <li class="list-group-item embroidery" data-bs-toggle="collapse" data-bs-target="#embroideryItems" aria-expanded="false" aria-controls="embroideryItems">EMBROIDERY </li>
+      </ul>
+      </center>
     
     <div class="collapse" id="embroideryItems">
-        <ul class="list-group">
-            <li class="list-group-item nested-list-group-item">Friendship Bracelets</li>
-            <li class="list-group-item nested-list-group-item">Satin Embroidery</li>
-        </ul>
+    <ul class="list-group"><br>
+    <li class="list-group-item nested-list-group-item" id="friendshipBraceletItem">Friendship Bracelets</li>
+    <li class="list-group-item nested-list-group-item" id="satinEmbroideryItem">Satin Embroidery</li>
+    </ul>
     </div>
     
     <br>
@@ -287,8 +171,8 @@ background-position: center;
     </div>
 
 
-
 <!-- Bootstrap JS (necessary for collapse functionality) -->
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 <script>
@@ -311,7 +195,7 @@ background-position: center;
 
 
 <!-- Bootstrap CSS and JavaScript -->
-<link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+ 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 
@@ -319,6 +203,8 @@ background-position: center;
 
 
   <!--/ Intro Skew Star /-->
+
+
   <div id="home" class="intro route bg-image" style="background-image: url(img/bg.jpg)">
     <div class="overlay-itro"></div>
     <div class="intro-content display-table">
@@ -332,6 +218,7 @@ background-position: center;
       </div>
     </div>
   </div>
+
   <!--/ Intro Skew End /-->
  
   <section id="about" class="about-mf sect-pt4 route">
@@ -344,7 +231,7 @@ background-position: center;
   <div class="row">
   <div class="col-sm-6 col-md-5">
   <div class="about-img">
-  <img src="Resume.jpg" class="img-fluid rounded b-shadow-a" alt="">
+  <img src="img/Resume.jpg" class="img-fluid rounded b-shadow-a" alt="">
   </div>
   </div>
 
@@ -430,6 +317,7 @@ background-position: center;
   </section>
 
   <!--/ Section Services Star /-->
+
   <section id="service" class="services-mf route">
     <div class="container">
       <div class="row">
@@ -508,6 +396,7 @@ Event decoration involves designing and setting up aesthetic elements for variou
 </div>
 </div>
 </section>
+
   <!--/ Section Services End /-->
 
          <div class="section-counter paralax-mf bg-image" style="background-image: url(img/bg1.jpg)">
@@ -569,7 +458,10 @@ Event decoration involves designing and setting up aesthetic elements for variou
   </div>
   </div>
   </div>
+
   <!-- Necklace Modal -->
+
+
 <div class="modal fade" id="necklaceModal" tabindex="-1" aria-labelledby="necklaceModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
@@ -578,9 +470,8 @@ Event decoration involves designing and setting up aesthetic elements for variou
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <!-- Add your gallery content here -->
-        <div class="container">
-          <div class="row">
+      <div class="container">
+      <div class="row">
             <div class="col-md-4">
               <img src="img/Necklace/N1.jpg" class="img-fluid custom-img" alt="Necklace Image 1">
             </div>
@@ -599,10 +490,8 @@ Event decoration involves designing and setting up aesthetic elements for variou
   </div>
 </div>
 
-<!-- List Item -->
-<li class="list-group-item nested-list-group-item" id="necklaceItem">Necklace</li>
-
 <!-- JavaScript to show modal on click -->
+
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     var necklaceModal = new bootstrap.Modal(document.getElementById('necklaceModal'));
@@ -632,7 +521,7 @@ Event decoration involves designing and setting up aesthetic elements for variou
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <!-- Add your gallery content here -->
+       
         <div class="container">
           <div class="row">
             <div class="col-md-4">
@@ -666,16 +555,11 @@ Event decoration involves designing and setting up aesthetic elements for variou
           </div>
         </div>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <!-- Add other buttons if needed -->
-      </div>
+
+      
     </div>
   </div>
 </div>
-
-<!-- List Item -->
-<li class="list-group-item nested-list-group-item" id="hairclipItem">Hair-clip</li>
 
 <!-- JavaScript to show modal on click -->
 <script>
@@ -697,22 +581,12 @@ Event decoration involves designing and setting up aesthetic elements for variou
   });
 </script>
       
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <!-- Add other buttons if needed -->
       </div>
     </div>
   </div>
 </div>
 
-<style>
 
-.custom-img {
-  width: 120%;
-  height: 230px; /* Set your desired fixed height */
-  object-fit: cover; /* Ensures the image covers the area, maintaining aspect ratio */
-}
-</style>
   <!-- Modal  Area -->
   <div class="modal fade" id="earringsModal" tabindex="-1" aria-labelledby="earringsModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -723,9 +597,7 @@ Event decoration involves designing and setting up aesthetic elements for variou
         </div>
         <div class="modal-body">
 
-          <!-- Add your gallery content here -->
-
-          <div class="container">
+  <div class="container">
   <div class="row">
     <div class="col-md-4">
       <img src="img/Earrings/earrings1.jpg" class="img-fluid custom-img" alt="Earrings Image 1">
@@ -776,44 +648,99 @@ Event decoration involves designing and setting up aesthetic elements for variou
 </div>
 </div>
 
-<style>
-.custom-img {
-  width: 120%;
-  height: 230px; /* Set your desired fixed height */
-  object-fit: cover; /* Ensures the image covers the area, maintaining aspect ratio */
-}
-.custom-close-button {
-    background-color: red; /* Set your desired background color here */
-    border-color: red; /* Optional: Set the border color to match */
-}
-</style>
-  <!-- JavaScript -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const earringsItem = document.getElementById('earringsItem');
-      const earringsModal = new bootstrap.Modal(document.getElementById('earringsModal'));
 
-      earringsItem.addEventListener('click', function() {
-        earringsModal.show();
-      });
-    });
-  </script>
+<!-- Satin Embroidery Modal -->
 
-<center>
-  <ul class="list-group">
-      <li class="list-group-item embroidery" data-bs-toggle="collapse" data-bs-target="#embroideryItems" aria-expanded="false" aria-controls="embroideryItems">
-          EMBROIDERY
-      </li>
-  </ul>
-</center>
+<div class="modal fade" id="satinEmbroideryModal" tabindex="-1" aria-labelledby="satinEmbroideryModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="satinEmbroideryModalLabel">Satin Embroidery Gallery</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <img src="img/Se/Se1.jpg" class="img-fluid custom-img" alt="Satin Embroidery Image 1">
+            </div>
 
+            <div class="col-md-4">
+              <img src="img/Se/Se2.jpg" class="img-fluid custom-img" alt="Satin Embroidery Image 2">
+            </div>
 
-<div class="collapse" id="embroideryItems">
-  <ul class="list-group">
-      <li class="list-group-item nested-list-group-item">Friendship Bracelets</li>
-      <li class="list-group-item nested-list-group-item">Satin Embroidery</li>
-  </ul>
+            <div class="col-md-4">
+              <img src="img/Se/Se3.jpg" class="img-fluid custom-img" alt="Satin Embroidery Image 2">
+            </div> <br><br><br><br><br><br><br><br><br><br><br>
+
+            <div class="col-md-4">
+              <img src="img/Se/Se4.jpg" class="img-fluid custom-img" alt="Satin Embroidery Image 2">
+            </div><br><br><br><br><br><br><br><br><br><br><br>
+
+            <div class="col-md-4">
+              <img src="img/Se/Se5.jpg" class="img-fluid custom-img" alt="Satin Embroidery Image 2">
+            </div> <br><br><br><br><br><br><br><br><br><br><br>
+
+            <div class="col-md-4">
+              <img src="img/Se/Se6.jpg" class="img-fluid custom-img" alt="Satin Embroidery Image 2">
+            </div> <br><br><br><br><br><br><br><br><br><br><br>
+
+            <div class="col-md-4">
+              <img src="img/Se/Se7.jpg" class="img-fluid custom-img" alt="Satin Embroidery Image 2">
+            </div> <br><br><br><br><br><br><br><br><br><br><br>
+
+            <div class="col-md-4">
+              <img src="img/Se/Se8.jpg" class="img-fluid custom-img" alt="Satin Embroidery Image 2">
+            </div> 
+
+            
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+
+
+<!-- Friendship Embroidery Modal -->
+<div class="modal fade" id="friendshipBraceletModal" tabindex="-1" aria-labelledby="friendshipBraceletModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="friendshipBraceletModalLabel">Friendship Bracelet Gallery</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <img src="img/Fb/FB1.jpg" class="img-fluid custom-img" alt="Friendship Bracelet Image 1">
+            </div>
+
+            <div class="col-md-4">
+              <img src="img/Fb/FB2.jpg" class="img-fluid custom-img" alt="Friendship Bracelet Image 2">
+            </div>
+
+            <div class="col-md-4">
+              <img src="img/Fb/FB3.jpg" class="img-fluid custom-img" alt="Friendship Bracelet Image 2">
+            </div><br><br><br><br><br><br><br><br><br><br><br>
+
+            <div class="col-md-4">
+              <img src="img/Fb/FB4.jpg" class="img-fluid custom-img" alt="Friendship Bracelet Image 2">
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
 
   <!--/ Section Contact-Footer Star /-->
@@ -867,6 +794,7 @@ Event decoration involves designing and setting up aesthetic elements for variou
                     </form>
                   </div>
                 </div>
+
                 <div class="col-md-6">
                   <div class="title-box-2 pt-4 pt-md-0">
                     <h5 class="title-left">
@@ -899,7 +827,8 @@ Event decoration involves designing and setting up aesthetic elements for variou
         </div>
       </div>
     </div>
-    <footer>
+
+  <footer>
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
@@ -918,29 +847,24 @@ Event decoration involves designing and setting up aesthetic elements for variou
           </div>
         </div>
       </div>
-    </footer>
+  </footer>
   </section>
   <!--/ Section Contact-footer End /-->
+
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
   <div id="preloader"></div>
 
   <!-- JavaScript Libraries -->
   <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/jquery/jquery-migrate.min.js"></script>
-  <script src="lib/popper/popper.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
-  <script src="lib/counterup/jquery.waypoints.min.js"></script>
   <script src="lib/counterup/jquery.counterup.js"></script>
   <script src="lib/owlcarousel/owl.carousel.min.js"></script>
   <script src="lib/lightbox/js/lightbox.min.js"></script>
   <script src="lib/typed/typed.min.js"></script>
-  <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
-
+  
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+  <script src="js/modal.js"></script>
 
 </body>
 </html>
