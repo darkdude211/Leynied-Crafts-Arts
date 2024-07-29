@@ -22,6 +22,7 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/gallery.modal.css" rel="stylesheet">
 
 
 </head>
@@ -108,11 +109,7 @@
     background-color: #f8f9fa; /* Slightly darker background color */
 }
 
-/* Bold text and monochromatic color for the BEADWORK item */
-.list-group-item.beadwork {
-    font-weight: bold; /* Make text bold */
-    color: #333; /* Monochromatic color (dark gray) */
-}
+
 
 /* Remove color changes on hover */
 .list-group-item:hover {
@@ -169,24 +166,7 @@
     border-color: red; /* Optional: Set the border color to match */
 }
 
-.beadwork {
-    background-image: url('img/3.jpg');
-    background-size: cover;
-    background-position: center;
-            }
-    
-      .macrame {
-            font-weight: bold;
-        }
-    
-       .embroidery {
-            font-weight: bold;
-        }
-    
-    .embroidery {
-    background-image: url('img/Embroidery.jpg');
-    background-size: cover;
-    background-position: center;
+
 
 </style>
 
@@ -210,7 +190,20 @@
 </ul>
 </center>
 
-   
+<style>
+     .beadwork {
+    background-image: url('img/3.jpg');
+    background-size: cover;
+    background-position: center;
+    color: rgb(0, 0, 0); /* Set text color to white */
+    font-weight: bold; /* Make text bold */
+    padding: 20px; /* Adjust padding as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+</style> 
 
       <div class="collapse" id="beadworkItems">
       <ul class="list-group"><br>
@@ -221,12 +214,28 @@
       </div>
       <br>
 
+
       <center>
       <ul class="list-group">
       <li class="list-group-item embroidery" data-bs-toggle="collapse" data-bs-target="#embroideryItems" aria-expanded="false" aria-controls="embroideryItems">EMBROIDERY </li>
       </ul>
       </center>
     
+    <style>  
+    .embroidery {
+    background-image: url('img/Embroidery.jpg');
+    background-size: cover;
+    background-position: center;
+    color: rgb(0, 0, 0); /* Set text color to white */
+    font-weight: bold; /* Make text bold */
+    padding: 20px; /* Adjust padding as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+    </style>
+
     <div class="collapse" id="embroideryItems">
     <ul class="list-group"><br>
     <li class="list-group-item nested-list-group-item" id="friendshipBraceletItem">Friendship Bracelets</li>
@@ -236,13 +245,28 @@
     
     <br>
     
-                            <center>
-        <ul class="list-group">
-            <li class="list-group-item macrame" data-bs-toggle="collapse" data-bs-target="#macrameItems" aria-expanded="false" aria-controls="macrameItems">
-                MACRAME
-            </li>
-        </ul>
-    </center>
+        <center>
+          <ul class="list-group">
+    <li class="list-group-item macrame macrame-cover" data-bs-toggle="collapse" data-bs-target="#macrameItems" aria-expanded="false" aria-controls="macrameItems">
+        MACRAME
+    </li>
+</ul>
+
+  <style>
+.macrame-cover {
+    background-image: url('img/Macrame.jpg');
+    background-size: cover;
+    background-position: center;
+    color: rgb(0, 0, 0); /* Set text color to white */
+    font-weight: bold; /* Make text bold */
+    padding: 20px; /* Adjust padding as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+  </style>
+  </center>
     
     <div class="collapse" id="macrameItems">
         <ul class="list-group">
