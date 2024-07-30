@@ -276,7 +276,7 @@
         <ul class="list-group"><br>
             <li class="list-group-item nested-list-group-item" id="alphaBraceletTrigger">Alpha Bracelets</li>
             <li class="list-group-item nested-list-group-item" id="alphaKeychainTrigger">Alpha Keychains</li>
-            <li class="list-group-item nested-list-group-item">Bags</li>
+            <li class="list-group-item nested-list-group-item" id="bagTrigger">Bags</li>
             <li class="list-group-item nested-list-group-item">Bracelets</li>
             <li class="list-group-item nested-list-group-item">Single Bracelet</li>
             <li class="list-group-item nested-list-group-item">Couple Bracelet</li>
@@ -699,6 +699,46 @@ Event decoration involves designing and setting up aesthetic elements for variou
   </div>
   </div>
 
+  <!-- Bags Modal -->
+<div class="modal fade" id="bagModal" tabindex="-1" aria-labelledby="bagModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="bagModalLabel">Bags Gallery</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <img src="img/Bags/Bag1.jpeg" class="img-fluid custom-img" alt="Bag Image 1">
+            </div>
+
+            <div class="col-md-4">
+              <img src="img/Bags/Bag2.jpg" class="img-fluid custom-img" alt="Bag Image 2">
+            </div>
+    
+            <div class="col-md-4">
+              <img src="img/Bags/Bag3.jpg" class="img-fluid custom-img" alt="Bag Image 2">
+            </div><br><br><br><br><br><br><br><br><br><br><br>
+            
+            <div class="col-md-4">
+              <img src="img/Bags/Bag4.jpg" class="img-fluid custom-img" alt="Bag Image 2">
+            </div>
+        
+
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <!-- Add other buttons if needed -->
+      </div>
+    </div>
+  </div>
+</div>
+
   <!-- Alpha Keychain Modal -->
 <div class="modal fade" id="alphaKeychainModal" tabindex="-1" aria-labelledby="alphaKeychainModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
@@ -710,20 +750,40 @@ Event decoration involves designing and setting up aesthetic elements for variou
       <div class="modal-body">
         <div class="container">
           <div class="row">
+
             <div class="col-md-4">
-              <img src="img/AlphaKeychains/AK1.jpg" class="img-fluid custom-img" alt="Alpha Keychain Image 1">
+              <img src="img/Ak/Ak1.jpg" class="img-fluid custom-img" alt="Alpha Keychain Image 2">
             </div>
+
             <div class="col-md-4">
-              <img src="img/AlphaKeychains/AK2.jpg" class="img-fluid custom-img" alt="Alpha Keychain Image 2">
+              <img src="img/Ak/Ak2.jpg" class="img-fluid custom-img" alt="Alpha Keychain Image 2">
+            </div><br><br><br><br><br><br><br><br><br><br><br>
+           
+            <div class="col-md-4">
+              <img src="img/Ak/Ak3.jpg" class="img-fluid custom-img" alt="Alpha Keychain Image 2">
+            </div><br><br><br><br><br><br><br><br><br><br><br>
+            <div class="col-md-4">
+
+              <img src="img/Ak/Ak4.jpg" class="img-fluid custom-img" alt="Alpha Keychain Image 2">
+            </div><br><br><br><br><br><br><br><br><br><br><br>
+            <div class="col-md-4">
+
+              <img src="img/Ak/Ak5.jpg" class="img-fluid custom-img" alt="Alpha Keychain Image 2">
+            </div><br><br><br><br><br><br><br><br><br><br><br>
+
+            <div class="col-md-4">
+              <img src="img/Ak/Ak6.jpg" class="img-fluid custom-img" alt="Alpha Keychain Image 2">
+            </div><br><br><br><br><br><br><br><br><br><br><br>
+
+            <div class="col-md-4">
+              <img src="img/Ak/Ak7.jpg" class="img-fluid custom-img" alt="Alpha Keychain Image 2">
             </div>
-            <!-- Add more images if needed -->
           </div>
         </div>
       </div>
 
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <!-- Add other buttons if needed -->
       </div>
     </div>
   </div>
@@ -882,28 +942,7 @@ Event decoration involves designing and setting up aesthetic elements for variou
       
     </div>
   </div>
-</div>
-
-<!-- JavaScript to show modal on click -->
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    var hairclipModal = new bootstrap.Modal(document.getElementById('hairclipModal'));
-    var hairclipItem = document.getElementById('hairclipItem');
-
-    hairclipItem.addEventListener('click', function () {
-      hairclipModal.show();
-    });
-
-    document.getElementById('hairclipModal').addEventListener('shown.bs.modal', function () {
-      console.log('Hairclip modal is now shown');
-    });
-
-    document.getElementById('hairclipModal').addEventListener('hidden.bs.modal', function () {
-      console.log('Hairclip modal is now hidden');
-    });
-  });
-</script>
-      
+</div>    
       </div>
     </div>
   </div>
