@@ -73,8 +73,67 @@
     myModal.show();
   });
 
+  document.addEventListener('DOMContentLoaded', function () {
+    var hairclipModal = new bootstrap.Modal(document.getElementById('hairclipModal'));
+    var hairclipItem = document.getElementById('hairclipItem');
+
+    hairclipItem.addEventListener('click', function () {
+      hairclipModal.show();
+    });
+
+    document.getElementById('hairclipModal').addEventListener('shown.bs.modal', function () {
+      console.log('Hairclip modal is now shown');
+    });
+
+    document.getElementById('hairclipModal').addEventListener('hidden.bs.modal', function () {
+      console.log('Hairclip modal is now hidden');
+    });
+  });
+
   document.getElementById('bagTrigger').addEventListener('click', function() {
     var myModal = new bootstrap.Modal(document.getElementById('bagModal'), {
+      keyboard: false
+    });
+    myModal.show();
+  });
+
+  document.getElementById('braceletTrigger').addEventListener('click', function() {
+    var myModal = new bootstrap.Modal(document.getElementById('braceletModal'), {
+      keyboard: false
+    });
+    myModal.show();
+  });
+
+  document.getElementById('broochTrigger').addEventListener('click', function() {
+    var myModal = new bootstrap.Modal(document.getElementById('broochModal'), {
+      keyboard: false
+    });
+    myModal.show();
+  });
+
+  document.getElementById('chandelierTrigger').addEventListener('click', function() {
+    var myModal = new bootstrap.Modal(document.getElementById('chandelierModal'), {
+      keyboard: false
+    });
+    myModal.show();
+  });
+
+  document.getElementById('dreamCatcherTrigger').addEventListener('click', function() {
+    var myModal = new bootstrap.Modal(document.getElementById('dreamCatcherModal'), {
+      keyboard: false
+    });
+    myModal.show();
+  });
+
+  document.getElementById('earringsTrigger').addEventListener('click', function() {
+    var myModal = new bootstrap.Modal(document.getElementById('earringsModal'), {
+      keyboard: false
+    });
+    myModal.show();
+  });
+
+  document.getElementById('hairPinTrigger').addEventListener('click', function() {
+    var myModal = new bootstrap.Modal(document.getElementById('hairPinModal'), {
       keyboard: false
     });
     myModal.show();
