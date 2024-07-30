@@ -41,3 +41,34 @@
       earringsModal.show();
     });
   });
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var necklaceModal = new bootstrap.Modal(document.getElementById('necklaceModal'));
+    var necklaceItem = document.getElementById('necklaceItem');
+
+    necklaceItem.addEventListener('click', function () {
+      necklaceModal.show();
+    });
+
+    document.getElementById('necklaceModal').addEventListener('shown.bs.modal', function () {
+      console.log('Necklace modal is now shown');
+    });
+
+    document.getElementById('necklaceModal').addEventListener('hidden.bs.modal', function () {
+      console.log('Necklace modal is now hidden');
+    });
+  });
+
+  document.getElementById('alphaBraceletTrigger').addEventListener('click', function() {
+    var myModal = new bootstrap.Modal(document.getElementById('alphaBraceletModal'), {
+      keyboard: false
+    });
+    myModal.show();
+  });
+
+  document.getElementById('alphaKeychainTrigger').addEventListener('click', function() {
+    var myModal = new bootstrap.Modal(document.getElementById('alphaKeychainModal'), {
+      keyboard: false
+    });
+    myModal.show();
+  });
