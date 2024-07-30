@@ -72,3 +72,10 @@
     });
     myModal.show();
   });
+
+  document.getElementById('bagTrigger').addEventListener('click', function() {
+    var myModal = new bootstrap.Modal(document.getElementById('bagModal'), {
+      keyboard: false
+    });
+    myModal.show();
+  });
